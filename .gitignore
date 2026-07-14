@@ -1,0 +1,19 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore packaged Java archives
+*.jar
+*.war
+*.ear
+
+# Ignore tool-specific build directories
+bin/
+build/
+out/
+
+# Ignore IDE specific files (optional but recommended)
+.idea/
+*.iml
+.classpath
+.project
+.settings/
