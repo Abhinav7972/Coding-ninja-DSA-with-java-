@@ -5,21 +5,17 @@ public class Prime {
     Scanner s = new Scanner(System.in);
 
     int n = s.nextInt();
-    boolean isPrime =  false;
+    boolean flag = false;
     for(int i = 2 ; i<n;i++)
     {
       if(n%i==0)
       {
-        isPrime = false;
+        flag = true;
         break;
-      }
-      else
-      {
-        isPrime = true;
       }
     }
 
-    if(isPrime==true)
+    if(flag==false)
     {
         System.out.println(n + " is a prime number");
     }
