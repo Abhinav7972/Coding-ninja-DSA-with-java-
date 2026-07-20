@@ -4,9 +4,9 @@ public class Method_arg {
 
   public static void printDetails(String Fname,String Lname,int Acc_no)
   {
-     System.out.println(Fname);
-     System.out.println(Lname);
-     System.out.println(Acc_no);
+     System.out.println("Name :" +Fname);
+     System.out.println("Last-name :"+Lname);
+     System.out.println("Account-number :" + Acc_no);
   }
 
    public static void main(String[] args) {
