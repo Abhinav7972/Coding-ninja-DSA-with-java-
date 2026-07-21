@@ -1,126 +1,47 @@
-# Coding-ninja-DSA-with-java-
+# Coding Ninjas DSA with Java
 
+A personal collection of Java practice programs from the Coding Ninjas Full Stack Development Bootcamp's DSA module.
 
-A collection of Java programs and practice exercises created while learning Data Structures and Algorithms fundamentals.
-which is part of coding ninja  full stack devlopment bootcamp
-DSA module
+## Covered so far
 
-The repository currently covers core Java concepts that form the foundation for solving DSA problems, including variables, data types, operators, conditional statements, and loops.
+- Java basics: program structure, variables, literals, and data types
+- Type casting and operators
+- Conditional statements and `switch`
+- Loops, prime-number exercises, and Fibonacci series
+- Methods, parameters, return values, overloading, and combinations
+- Star, number, and character patterns
 
-## Topics Covered
-
-- Java program structure and output
-- Variables and literals
-- Primitive data types
-- Type casting
-  - Implicit casting
-  - Explicit casting
-- Operators
-  - Arithmetic and assignment operators
-  - Unary operators
-  - Relational and logical operators
-  - Bitwise operators
-  - Operator precedence
-  - String operations
-- Control flow
-  - `if-else` conditions
-  - Nested conditions
-  - `switch` statements
-  - Ternary operators
-- Loops
-  - Iterating through a range
-  - Calculating sums using loops
-- User input with `Scanner`
-
-## Repository Structure
+## Structure
 
 ```text
 introduction_to_java/
-├── introduction_to_java/
-│   ├── First.java
-│   ├── Hello.java
-│   └── HelloWorld.java
-├── fundamentals_of_java/
-│   ├── Data_type.java
-│   ├── Litreals.java
-│   └── var_session.java
-├── operators_in_java/
-│   ├── Bitwise_op.java
-│   ├── Explicit.java
-│   ├── Implicit.java
-│   ├── Operator.java
-│   ├── Operators_2.java
-│   ├── Precedence.java
-│   ├── Relational.java
-│   ├── String_op.java
-│   └── User_input_percent.java
-├── Control_flow/
-│   ├── Combine_cond.java
-│   ├── Conditionals.java
-│   ├── Positive_check.java
-│   ├── Scholarship_test.java
-│   ├── Score.java
-│   ├── Switch.java
-│   └── Ternary_op.java
-└── Loops/
-    ├── Loop1.java
-    └── sum_loop.java
+├── introduction_to_java/   # First Java programs
+├── fundamentals_of_java/  # Variables, literals, and data types
+├── operators_in_java/     # Operators and type casting
+├── Control_flow/          # Conditions and switch statements
+├── Loops/                 # Loop-based exercises
+├── methods/               # Methods and method exercises
+├── Patterns/              # Basic patterns
+└── Patterns_2/            # Advanced patterns
 ```
 
-## Getting Started
+`Notes/` contains supporting learning notes.
 
-### Prerequisites
+## Run an exercise
 
-Install the Java Development Kit (JDK) on your system.
-
-Verify your installation:
+From the folder containing a source file:
 
 ```bash
-java --version
-javac --version
+javac FileName.java
+java FileName
 ```
 
-### Run a Program
+For example:
 
-1. Move to the folder containing the Java file:
+```bash
+cd introduction_to_java/Loops
+javac Loop1.java
+java Loop1
+```
 
-   ```bash
-   cd introduction_to_java/Loops
-   ```
-
-2. Compile the file:
-
-   ```bash
-   javac Loop1.java
-   ```
-
-3. Run the program:
-
-   ```bash
-   java Loop1
-   ```
-
-> Compile and run one file at a time, using the class name that matches the file name.
-
-## Learning Goal
-
-This repository documents my hands-on Java learning journey as I build the programming fundamentals needed to solve Data Structures and Algorithms problems confidently.
-
-## Planned Topics
-
-- Arrays
-- Strings
-- Recursion
-- Searching and sorting
-- Linked lists
-- Stacks and queues
-- Trees and graphs
-- Dynamic programming
-
-## Contributing
-
-This is a personal learning repository, but suggestions and improvements are welcome.
-
-## Author
-
-**Abhinav**
+Each program is standalone and uses the default package, so compile and run one file at a time.
