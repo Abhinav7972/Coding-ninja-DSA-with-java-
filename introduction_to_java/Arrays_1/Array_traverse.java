@@ -19,6 +19,12 @@ for(int i=0;i<=arr.length-1;i++) //looping through all array element based on le
     System.out.print(arr[i] + " ");
 }
 
+System.out.println();
+
+for(int i:arr) //looping  array with forach 
+{
+    System.out.print(i + " "); //value of array printed  not array array index
+}
 
 
 }
