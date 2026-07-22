@@ -23,6 +23,7 @@ introduction_to_java/
 ├── methods/               # Methods and method exercises
 ├── Patterns/              # Basic patterns
 └── Patterns_2/            # Advanced patterns
+└── Array_1/               # Array basic exercises
 ```
 
 `Notes/` contains supporting learning notes.
