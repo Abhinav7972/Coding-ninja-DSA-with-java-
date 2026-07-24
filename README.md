@@ -24,6 +24,7 @@ introduction_to_java/
 ├── Patterns/              # Basic patterns
 └── Patterns_2/            # Advanced patterns
 └── Array_1/               # Array basic exercises
+└── Array_2/               # Array advanced exercises
 ```
 
 `Notes/` contains supporting learning notes.
