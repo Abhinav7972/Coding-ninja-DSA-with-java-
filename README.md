@@ -1,49 +1,91 @@
 # Coding Ninjas DSA with Java
 
-A personal collection of Java practice programs from the Coding Ninjas Full Stack Development Bootcamp's DSA module.
+A personal collection of Java practice programs created while learning the **Coding Ninjas Full Stack Development Bootcamp** DSA curriculum.
 
-## Covered so far
+The repository currently focuses on Java foundations, problem-solving exercises, arrays, methods, loops, and pattern printing. Each file is a small, standalone program intended for learning and experimentation.
 
-- Java basics: program structure, variables, literals, and data types
+## Topics covered
+
+- Java program structure and first programs
+- Variables, literals, and data types
 - Type casting and operators
-- Conditional statements and `switch`
-- Loops, prime-number exercises, and Fibonacci series
-- Methods, parameters, return values, overloading, and combinations
-- Star, number, and character patterns
+- Conditional statements, ternary operators, and `switch`
+- `for`, `while`, nested, and `do-while` loops
+- Prime numbers, Fibonacci series, digit reversal, and summation exercises
+- Methods, arguments, return values, pass-by-value, overloading, and combinations
+- Arrays: declaration, traversal, default values, updates, insertion, and searching for largest values
+- Star, number, character, triangle, pyramid, mirror, and hourglass patterns
+- Notes on approaching pattern-printing problems
 
-## Structure
+## Repository structure
 
 ```text
-introduction_to_java/
-├── introduction_to_java/   # First Java programs
-├── fundamentals_of_java/  # Variables, literals, and data types
-├── operators_in_java/     # Operators and type casting
-├── Control_flow/          # Conditions and switch statements
-├── Loops/                 # Loop-based exercises
-├── methods/               # Methods and method exercises
-├── Patterns/              # Basic patterns
-└── Patterns_2/            # Advanced patterns
-└── Array_1/               # Array basic exercises
-└── Array_2/               # Array advanced exercises
+CN_DSA/
+├── introduction_to_java/
+│   ├── introduction_to_java/  # First Java programs
+│   ├── fundamentals_of_java/  # Variables, literals, and data types
+│   ├── operators_in_java/     # Operators and type casting
+│   ├── Control_flow/          # Conditions, ternary operator, and switch
+│   ├── Loops/                 # Loop-based exercises
+│   ├── methods/               # Methods and method exercises
+│   ├── Arrays_1/              # Array fundamentals
+│   ├── Arrays_2/              # Array update and insertion exercises
+│   ├── Patterns/              # Basic star and number patterns
+│   └── Patterns_2/            # Advanced character and shape patterns
+├── Notes/
+│   └── Patterns_1/            # Pattern-solving notes and strategy
+└── README.md
 ```
 
-`Notes/` contains supporting learning notes.
+## Prerequisites
+
+- Java Development Kit (JDK) 25 or later
+- A terminal such as PowerShell, Command Prompt, or a terminal in your IDE
+
+Verify your Java installation:
+
+```bash
+javac --version
+java --version
+```
 
 ## Run an exercise
 
-From the folder containing a source file:
+Every source file uses the default package and can be compiled independently.
 
-```bash
-javac FileName.java
-java FileName
-```
+1. Move to the folder containing the file.
+2. Compile the file with `javac`.
+3. Run the class using its filename without `.java`.
 
-For example:
+Example:
 
-```bash
-cd introduction_to_java/Loops
+```powershell
+cd introduction_to_java\Loops
 javac Loop1.java
 java Loop1
 ```
 
-Each program is standalone and uses the default package, so compile and run one file at a time.
+For a program that accepts input, enter the requested values in the terminal after running it.
+
+Example:
+
+```powershell
+cd introduction_to_java\Arrays_1
+javac Array_sum_of_element.java
+java Array_sum_of_element
+```
+
+## Learning approach
+
+The programs in this repository are organized by topic and are intended to be explored one at a time:
+
+1. Read the comments and identify the concept being demonstrated.
+2. Compile and run the program.
+3. Change sample values or inputs.
+4. Try extending the solution with your own logic.
+
+## Notes
+
+- Class names and filenames are intentionally kept aligned so each example can be compiled directly.
+- There is no build system or external dependency; the JDK is sufficient.
+- This is an actively growing learning repository, so more DSA topics and exercises may be added over time.
