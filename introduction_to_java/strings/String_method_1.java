@@ -27,7 +27,28 @@ public class String_method_1 {
     System.out.println(str.replace('a','k')); //use to replace char in string 
 
    //indexof 
-   System.out.println(str.indexOf('p')); //use to find index of char in string
+   System.out.println(str.indexOf('a')); //use to find first index of char in string
+   System.out.println(str.indexOf("Alpha")); //use to find first index of substring in string 
+   System.out.println(str.indexOf("beta")); //return -1 if dont find substring
+
+   //lastindexof 
+   System.out.println(str.lastIndexOf('a')); //use to  find last index of char in string
+ 
+ 
+   //equals 
+   String s1 = "alpha";
+   String s2 = "Omega"; 
+   System.out.println(s1.equals(s2)); // use to check equality in string return true or false 
+
+   //compare to 
+   String s3 = "alpha";
+   System.out.println(s1.compareTo(s3)); //return 0 if string is  equal 
+   System.out.println(s1.compareTo(s2)); //return positive string is greater deoend on ascii value 
+
+   
+
+
+
 
  }
 }
