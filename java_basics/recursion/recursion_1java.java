@@ -83,6 +83,22 @@ return isSmallSorted;
 }
 
 
+public static boolean isSortedBetter(int [] arr,int si)
+{
+if(si==arr.length-1)
+{
+ return true;
+}
+
+if(arr[si]>arr[si+1])
+{
+    return false;
+}
+
+boolean isSorted = isSortedBetter(arr,si+1);  
+
+return isSorted;
+}
 
 
 public static void main(String[] args) {
@@ -93,9 +109,11 @@ public static void main(String[] args) {
  System.out.println(fibnum(10));
 
 
- int arr[] = {8,2,3,4,5};
+ int arr[] = {1,2,3,4,5}; 
 
-  System.out.println(isSorted(arr));
+  System.out.println(isSorted(arr)); 
+  System.out.println(isSortedBetter(arr,0));
+
 }
 
 }
