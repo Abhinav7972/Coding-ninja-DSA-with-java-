@@ -56,12 +56,46 @@ return fib;
 
 }
 
-    
+
+public static boolean isSorted(int arr [])
+{
+
+  if(arr.length==1)
+  {
+    return true;
+  } 
+
+  if(arr[0]>arr[1])
+  {
+    return false;
+  }
+
+int smallArray [] = new int[arr.length-1];
+
+for(int i=1;i<arr.length;i++)
+{
+smallArray[i-1] = arr[i];
+} 
+
+boolean isSmallSorted =  isSorted(smallArray); 
+
+return isSmallSorted;
+}
+
+
+
+
 public static void main(String[] args) {
  System.out.println(fact(5));
  System.out.println(sum(5));
  printnum(5);
  System.out.println();
  System.out.println(fibnum(10));
+
+
+ int arr[] = {8,2,3,4,5};
+
+  System.out.println(isSorted(arr));
 }
+
 }
