@@ -150,6 +150,68 @@ int find =  findIndexBetter(arr, x, startIndex+1);
 
 return find;
 
+} 
+
+
+public static int findLastindex(int[] arr,int x)
+{
+if(arr.length==0)
+{
+    return -1;
+}
+
+int smallArray[] = new int[arr.length-1]; 
+
+for(int i=1;i<arr.length;i++)
+{
+   smallArray[i-1] = arr[i];
+}
+
+int k = findLastindex(smallArray,x); 
+
+if(k!=-1)
+{
+    return k+1;
+}
+else 
+{
+    if(arr[0]==x)
+    {
+        return 0;
+    }
+    else 
+    {
+        return -1;
+    }
+}
+
+}
+
+
+public static int findLastindexBetter(int [] a, int x, int si)
+{
+if(si==a.length)
+{
+    return -1;
+}
+
+int k =  findLastindexBetter(a, x, si+1);
+
+if(k!=-1)
+{
+    return k;
+}
+else 
+{
+    if(a[si]==x)
+    {
+        return si;
+    }
+    else 
+    {
+        return -1;
+    }
+}
 }
 
 
@@ -162,11 +224,16 @@ public static void main(String[] args) {
 
 
  int arr[] = {1,2,3,4,5}; 
+ int arr2[] = {1,2,3,4,5,2};
 
   System.out.println(isSorted(arr)); 
   System.out.println(isSortedBetter(arr,0));
  System.out.println(findIndex(arr, 2));
  System.out.println(findIndexBetter(arr, 10, 0));
+
+ System.out.println(findLastindex(arr2, 2)); 
+ System.out.println(findLastindexBetter(arr2, 2, 0));
+
 }
 
 }
