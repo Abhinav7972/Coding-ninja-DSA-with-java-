@@ -101,6 +101,58 @@ return isSorted;
 }
 
 
+public static int findIndex(int arr[],int x)
+{
+    if(arr.length==0)
+    {
+        return -1;
+    }
+
+    if(arr[0]==x)
+    {
+        return 0;
+    }
+    
+    int smallArray[] = new int[arr.length-1]; 
+
+    for(int i=1;i<arr.length;i++)
+    {
+        smallArray[i-1] = arr[i];
+    }
+
+    int find = findIndex(smallArray, x);
+
+    if(find== -1)
+    {
+        return -1;
+    }
+    else 
+    {
+        return find+1;
+    }
+
+}
+
+
+public static int findIndexBetter(int arr[],int x,int startIndex)
+{
+if(startIndex == arr.length)
+{
+    return -1;
+} 
+
+if(arr[startIndex]==x)
+{
+    return startIndex;
+}
+
+int find =  findIndexBetter(arr, x, startIndex+1); 
+
+return find;
+
+}
+
+
 public static void main(String[] args) {
  System.out.println(fact(5));
  System.out.println(sum(5));
@@ -113,7 +165,8 @@ public static void main(String[] args) {
 
   System.out.println(isSorted(arr)); 
   System.out.println(isSortedBetter(arr,0));
-
+ System.out.println(findIndex(arr, 2));
+ System.out.println(findIndexBetter(arr, 10, 0));
 }
 
 }
