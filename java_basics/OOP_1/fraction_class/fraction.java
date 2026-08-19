@@ -5,6 +5,10 @@ public class fraction {
 
   public fraction(int numerator, int denominator)
   {
+    if(denominator==0)
+    {
+        denominator=1;
+    }
     this.numerator = numerator;
     this.denominator = denominator;
     simplify();
@@ -43,11 +47,17 @@ public class fraction {
   public void setNumerator(int numerator)
   {
     this.numerator = numerator;
+    simplify();
   }
 
   public void setDenominator(int denominator)
   {
+    if(denominator==0)
+    {
+        return;
+    }
     this.denominator=denominator;
+    simplify();
   }
  
 
