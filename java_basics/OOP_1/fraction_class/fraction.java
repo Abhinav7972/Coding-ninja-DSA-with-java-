@@ -58,6 +58,13 @@ public class fraction {
     }
     this.denominator=denominator;
     simplify();
+  } 
+
+  public void add(fraction f2)
+  {
+    this.numerator = this.numerator*f2.denominator+ this.denominator*f2.numerator;
+    this.denominator = this.numerator * f2.denominator;
+    simplify();
   }
  
 
