@@ -68,5 +68,13 @@ public class fraction {
   }
  
 
+public static fraction add(fraction f1, fraction f2)
+{
+int num = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
+int denom = f2.denominator * f1.denominator;
+
+fraction f3 =  new fraction(num, denom);
+return f3;
+}
 
 }
