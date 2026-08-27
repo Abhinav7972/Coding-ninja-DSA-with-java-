@@ -13,8 +13,8 @@ public class Vehicle_use {
    c1.setColor("black");
    c1.maxpeed = "600 km/h";
 
-   //c1.print();
-   c1.carPrint();
+   c1.print();
+   //c1.carPrint();
 
 
    Bicycle b1 = new Bicycle();
@@ -23,6 +23,6 @@ public class Vehicle_use {
    b1.maxpeed = "30 km/h";
 
    //b1.print();
-   b1.bicyclePrint();
+   //b1.bicyclePrint();
  }
 }
