@@ -1,6 +1,6 @@
 
 public class Vehicle {
-    String maxpeed;
+    String maxpeed = "30 km/h";
     private String color;
      
     public void setColor(String color)
