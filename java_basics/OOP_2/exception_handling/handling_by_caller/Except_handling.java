@@ -46,7 +46,10 @@ class Except_handling
      {
       System.out.println("invalid number :");
        e.printStackTrace();
-
+     }
+     finally
+     {
+       System.out.println("finally block");
      }
 
      System.out.println("main block");
