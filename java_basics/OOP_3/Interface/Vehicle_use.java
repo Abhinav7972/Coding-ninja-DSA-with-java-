@@ -12,5 +12,6 @@ public static void main(String[] args) {
     System.out.println(vi.Ismotorize());
     System.out.println(vi.getCompany());
     System.out.println(c1.numGears());
+    c1.print();
 }
 }
