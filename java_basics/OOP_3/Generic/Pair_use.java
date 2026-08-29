@@ -3,9 +3,13 @@
 public class Pair_use {
 
 public static void main(String[] args) {
- Pair <String> ps = new Pair<String>("a","b");
- Pair <Integer> pi = new Pair<Integer>(2,4);
- Pair <Double> pd = new Pair<Double>(1.1, 2.2);
+ Pair <String,Integer> p = new Pair<>();
+ p.setFirst("abc");
+ p.setSecond(5);
+ System.out.println(p.getFirst() + " " + p.getSecond());
+ Pair <String,String> ps = new Pair<String,String>("a","b");
+ Pair <Integer,Integer> pi = new Pair<Integer,Integer>(2,4);
+ Pair <Double,Double> pd = new Pair<Double,Double>(1.1, 2.2);
  System.out.println(ps.getFirst() +" " + ps.getSecond());
  System.out.println(pi.getFirst() +" " + pi.getSecond());
  System.out.println(pd.getFirst() +" " + pd.getSecond());
