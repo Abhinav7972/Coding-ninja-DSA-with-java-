@@ -3,6 +3,13 @@
 public class Pair_use {
 
 public static void main(String[] args) {
+Pair <String,Integer>pinner = new Pair<>("Alpha",1);
+Pair <Pair<String,Integer>, Integer>  pp = new Pair<>(); 
+pp.setFirst(pinner);
+System.out.println(pp.getFirst());
+System.out.println(pp.getFirst().getFirst());
+System.out.println(pp.getFirst().getSecond());
+
  Pair <String,Integer> p = new Pair<>();
  p.setFirst("abc");
  p.setSecond(5);
