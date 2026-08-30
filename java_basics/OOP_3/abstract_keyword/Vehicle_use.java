@@ -2,7 +2,7 @@
 
 public class Vehicle_use {
     public static void main(String[] args) {
-        Vehicle v;
+        Vehicle_gen v;
         Company c1 = new Company("BMW");
         String company1 = c1.getCompany();
         v = new Company("Audi");
