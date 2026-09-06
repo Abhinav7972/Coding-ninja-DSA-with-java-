@@ -1,6 +1,6 @@
 //package java_basics.Linked-list-1.Linked_list;
 
-
+import java.util.Scanner;
 
 public class LinkedList {
 
@@ -24,6 +24,33 @@ public  static  Node<Integer>createLinkedlist()
  return  n1;
 }
 
+public  static   Node<Integer>Takeinput()
+{
+
+Scanner sc = new Scanner(System.in);
+int data = sc.nextInt();
+
+Node<Integer>head = null;
+while (data!=-1) {
+Node<Integer> currNode = new Node<Integer>(data);
+if (head==null) {
+    head = currNode;
+}
+else
+{
+Node<Integer>tail = head;
+while (tail.next!=null) {
+    tail=tail.next;
+}
+tail.next = currNode;
+}
+
+data = sc.nextInt();
+}
+
+return  head;
+}
+
 
 public  static  void print(Node<Integer> head)
 {
@@ -45,17 +72,34 @@ public static  void increaMent(Node<Integer> head)
   head.data++;
 }
 
+public  static  int length(Node<Integer> head)
+{
+int count =0;
+Node<Integer> temp = head;
+
+while (temp!=null) {
+    temp = temp.next;
+    count++;
+}
+return  count;
+}
 
     
     public static void main(String[] args) {
-     Node<Integer> Head = createLinkedlist(); 
-      print(Head);
-      System.out.println();
-      print(Head.next);
-      System.out.println();
-      print(Head.next.next);
+     //Node<Integer> Head = createLinkedlist(); 
+     Node<Integer> Head = Takeinput(); 
+
+      //print(Head);
+      //System.out.println();
+      //print(Head.next);
+      //System.out.println();
+      //print(Head.next.next);
      //System.out.println(Head);
-      increaMent(Head);
+      //increaMent(Head);
+      //print(Head);
+      //System.out.println();
+      //System.out.println(length(Head));
+
       print(Head);
 
     }
