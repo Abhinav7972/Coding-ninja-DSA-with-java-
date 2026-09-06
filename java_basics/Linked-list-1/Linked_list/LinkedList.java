@@ -39,6 +39,13 @@ while (head!=null) {
 }
 
 }
+
+public static  void increaMent(Node<Integer> head)
+{
+  head.data++;
+}
+
+
     
     public static void main(String[] args) {
      Node<Integer> Head = createLinkedlist(); 
@@ -48,6 +55,8 @@ while (head!=null) {
       System.out.println();
       print(Head.next.next);
      //System.out.println(Head);
+      increaMent(Head);
+      print(Head);
 
     }
 
