@@ -86,10 +86,40 @@ while (temp!=null) {
 return  count;
 }
 
+
+public static  Node insertNode(Node head, int data,int pos)
+{
+  Node newNode = new Node<Integer>(data);
+   
+  if(pos==0)
+  {
+    newNode.next =head;
+    head = newNode;
+    return  newNode;
+  }
+
+  int count =0;
+  Node current = head;
+
+
+  while (current!=null && count < pos-1) {
+    current = current.next;
+    count = count+1;
+  }
+
+  if(current==null)
+  {
+    return  head;
+  }
+
+  newNode.next = current.next;
+  current.next = newNode;
+    return  head;
+}
     
     public static void main(String[] args) {
-     //Node<Integer> Head = createLinkedlist(); 
-     Node<Integer> Head = Takeinput(); 
+     Node<Integer> Head = createLinkedlist(); 
+     //Node<Integer> Head = Takeinput(); 
 
       //print(Head);
       //System.out.println();
@@ -102,6 +132,9 @@ return  count;
       //System.out.println();
       //System.out.println(length(Head));
 
+      print(Head);
+      Head = insertNode(Head,100,1);
+      System.out.println();
       print(Head);
 
     }
