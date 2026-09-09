@@ -116,10 +116,35 @@ public static  Node insertNode(Node head, int data,int pos)
   current.next = newNode;
     return  head;
 }
+
+public  static  Node deletNode(Node head, int pos)
+{
+
+if(pos ==0 && head!=null)
+{
+  return  head.next;
+}
+
+
+Node prevNode = head;
+
+for(int i=0;i<pos-1 && prevNode!=null;i++)
+{
+prevNode = prevNode.next;
+}
+
+if(prevNode==null ||prevNode.next==null)
+{
+  return  head;
+}
+
+prevNode.next = prevNode.next.next;
+return  head;
+}
     
     public static void main(String[] args) {
-     Node<Integer> Head = createLinkedlist(); 
-     //Node<Integer> Head = Takeinput(); 
+     //Node<Integer> Head = createLinkedlist(); 
+     Node<Integer> Head = Takeinput(); 
 
       //print(Head);
       //System.out.println();
@@ -132,9 +157,12 @@ public static  Node insertNode(Node head, int data,int pos)
       //System.out.println();
       //System.out.println(length(Head));
 
+      //print(Head);
+      //Head = insertNode(Head,100,10);
+      //System.out.println();
       print(Head);
-      Head = insertNode(Head,100,1);
       System.out.println();
+      Head = deletNode(Head, 0);
       print(Head);
 
     }
