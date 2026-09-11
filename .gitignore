@@ -16,5 +16,6 @@ out/
 *.iml
 .classpath
 .project
-.settings/
- .vscode/
+.settings
+.vscode/
+settings.json
