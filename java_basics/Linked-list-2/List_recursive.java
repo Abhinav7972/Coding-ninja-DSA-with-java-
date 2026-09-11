@@ -60,10 +60,34 @@ return  head;
 
 }
 
+
+public static  Node deletNode(Node head,int pos)
+{
+if(head==null)
+{
+  return null;
+} 
+
+if(pos==0)
+{
+  return head.next;
+}
+
+head.next = deletNode(head.next,pos-1);
+
+return  head;
+
+}
+
+
+
   public static void main(String[] args) {
     Node <Integer> Head = takeInput();
     print(Head); 
     Head = insertNode(Head, 13, 0);
+    System.out.println();
+    print(Head);
+    Head = deletNode(Head,2);
     System.out.println();
     print(Head);
   }
