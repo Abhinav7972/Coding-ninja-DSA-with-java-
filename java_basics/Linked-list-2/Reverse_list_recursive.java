@@ -76,13 +76,29 @@ public class Reverse_list_recursive {
    }
 
 
+   public static Node<Integer> reverseBest(Node<Integer> head)
+   {
+     if (head == null || head.next == null) {
+      return  head;
+     }
+
+     Node<Integer> smallHead = reverseBest(head.next);
+     Node<Integer> revtail = head.next; 
+    revtail.next = head;
+    head.next = null;
+    return smallHead;
+   }
+
     public static void main(String[] args) {
         Node <Integer> head = CreatelinkedList();
         
         print(head);
         System.out.println();
         //head = reverse(head);
-        DoubleNode<Integer> answer = reverseBetter(head);
-        print(answer.head);
+        //DoubleNode<Integer> answer = reverseBetter(head);
+        //print(answer.head);
+        head = reverseBest(head);
+        print(head);
+        
     }
 }
