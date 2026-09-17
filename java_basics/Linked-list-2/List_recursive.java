@@ -80,6 +80,24 @@ return  head;
 }
 
 
+public  static  Node midPoint(Node head)
+{
+
+if (head==null) {
+  return  head;
+}
+
+
+ Node <Integer> slow = head;
+ Node <Integer> fast = head;
+
+ while (fast!=null && fast.next!=null) {
+  slow = slow.next;
+  fast = fast.next.next;
+ }
+
+ return  slow;
+}
 
   public static void main(String[] args) {
     Node <Integer> Head = takeInput();
@@ -90,5 +108,8 @@ return  head;
     Head = deletNode(Head,2);
     System.out.println();
     print(Head);
+    System.out.println();
+    Node <Integer> mid = midPoint(Head);
+    System.out.print("Midpoint :" + mid.data);
   }
 }
