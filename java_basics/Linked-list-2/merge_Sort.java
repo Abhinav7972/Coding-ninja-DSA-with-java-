@@ -62,7 +62,7 @@ public  static Node merge(Node <Integer> l1, Node <Integer> l2)
   
 }
 
-public  static  Node mergNode(Node head)
+public  static  Node mergeNode(Node head)
 {
 if (head==null || head.next==null) {
     return  head;
@@ -80,8 +80,8 @@ while (fast!=null && fast.next!=null) {
 Node <Integer> mid = slow.next;
 slow.next = null;
 
-Node<Integer> leftSorted = mergNode(head);
-Node<Integer> rightSorted = mergNode(mid);
+Node<Integer> leftSorted = mergeNode(head);
+Node<Integer> rightSorted = mergeNode(mid);
 
 
 Node <Integer> merged = merge(leftSorted, rightSorted);
@@ -93,7 +93,7 @@ return  merged;
     Node <Integer> List = takeInput();
     print(List);
     System.out.println();
-    Node <Integer> sorted = mergNode(List);
+    Node <Integer> sorted = mergeNode(List);
     print(sorted);
   }
 }
