@@ -1,4 +1,4 @@
-package java_basics.Stacks;
+package java_basics.Stacks.Stack_Using_array;
 
 public class stackUse {
     
