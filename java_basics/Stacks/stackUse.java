@@ -3,9 +3,9 @@ package java_basics.Stacks;
 public class stackUse {
     
     public static void main(String[] args) throws stackFullException, stackEmptyException {
-        stackUsingArrays stack = new stackUsingArrays(100);
+        stackUsingArrays stack = new stackUsingArrays();
 
-        int arr [] = {5,6,7,8};
+        int arr [] = {5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
 
         for(int i=0;i<arr.length;i++)
         {

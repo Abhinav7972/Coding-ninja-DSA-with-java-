@@ -30,10 +30,24 @@ public class stackUsingArrays {
     public  void push(int element) throws stackFullException
     {
        if(topindex==data.length-1) {
-         throw new stackFullException();
+         //throw new stackFullException();
+         doubleCapicity();
        }
 
        data[++topindex] = element;
+    }
+
+    private  void doubleCapicity()
+    {
+      System.out.println("Double Capicity");
+
+      int temp [] =data;
+      data = new int[2 * temp.length];
+
+      for(int i =0;i<temp.length;i++)
+      {
+         data[i] = temp[i];
+      }
     }
 
     public  int top() throws stackEmptyException
