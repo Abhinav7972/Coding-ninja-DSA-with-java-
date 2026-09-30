@@ -1,86 +1,148 @@
-# Coding Ninjas DSA with Java
+# CN_DSA - Java and DSA Learning Journey
 
-A personal collection of Java programs and notes created while learning Data Structures and Algorithms through the Coding Ninjas curriculum.
+This repository is a personal collection of Java programs, exercises, and notes created while learning Data Structures and Algorithms with Java.
 
-The repository currently contains **152 Java practice files**. They cover Java fundamentals, arrays, strings, patterns, object-oriented programming, recursion, searching, sorting, time and space complexity, and an introductory linked-list exercise.
+It reflects a steady progression from core Java fundamentals to object-oriented programming, data structures, and algorithmic problem-solving.
 
-## Topics covered
+## Current progress
 
-### Introduction to Java
+The repository currently covers the following stages of learning:
 
-- Program structure, variables, literals, primitive data types, type casting, and operators
-- Conditional statements, ternary operators, and `switch`
-- Loops, nested loops, Fibonacci series, prime numbers, and digit operations
-- Methods, arguments, return values, call stack, pass-by-value, and overloading
-- One-dimensional arrays: traversal, default values, sums, maximum and second-largest values, insertion, reversal, rotation, and shifting
-- Two-dimensional arrays: traversal, runtime input, methods, enhanced `for` loops, jagged arrays, largest-column sum, and spiral traversal
-- Strings and character arrays: creation, memory, input, methods, word counting, and reversal
-- Pattern printing: squares, triangles, pyramids, character patterns, mirror and inverted triangles, and hourglass patterns
+- Java fundamentals:
+  - variables and data types
+  - literals and type conversion
+  - operators and precedence
+  - control flow and conditional statements
+  - loops and nested loops
+  - methods and method overloading
+  - arrays and 2D arrays
+  - strings and basic string operations
+  - pattern printing
 
-### Java Basics and DSA
+- Object-oriented programming:
+  - classes and objects
+  - encapsulation
+  - inheritance
+  - polymorphism
+  - abstraction
+  - interfaces
+  - generics
+  - exception handling
 
-- Object-oriented programming: classes, objects, encapsulation, inheritance, polymorphism, abstraction, interfaces, generics, and exception handling
-- Practice classes: `Student`, `Account`, `Employee`, `Fraction`, `Complex`, `Polynomial`, and a dynamic array
-- Recursion: palindrome check, binary search, merge sort, quick sort, and Tower of Hanoi
-- Searching: linear and binary search
-- Sorting: bubble, insertion, selection, and merge operations
-- Time and space complexity exercises: array intersection and equilibrium
-- Introductory linked-list exercise using `ArrayList`
-- Console projects: calculator and tic-tac-toe
+- Data structures:
+  - linked list
+  - stack
+  - queue
+
+- DSA foundations:
+  - recursion
+  - linear search
+  - binary search
+  - bubble sort
+  - insertion sort
+  - selection sort
+  - merge sort
+  - time and space complexity
+
+- Practice and notes:
+  - custom class exercises
+  - array-based problems
+  - algorithm dry runs
+  - pattern and spiral traversal notes
+
+This repository is a learning record of Java basics and beginner-to-intermediate DSA concepts, with a strong focus on practice-based understanding.
 
 ## Repository structure
 
 ```text
 CN_DSA/
 ├── introduction_to_java/
-│   ├── introduction_to_java/      # First Java programs
-│   ├── fundamentals_of_java/      # Variables, literals, and data types
-│   ├── operators_in_java/         # Operators and type casting
-│   ├── Control_flow/              # Conditions, ternary operator, and switch
-│   ├── Loops/                     # Loop-based exercises
-│   ├── methods/                   # Methods and method exercises
-│   ├── Arrays_1/                  # One-dimensional array fundamentals
-│   ├── Arrays_2/                  # Array manipulation exercises
-│   ├── 2D_Array/                  # Two-dimensional and jagged-array exercises
-│   ├── strings/                   # String and character-array exercises
-│   ├── Patterns/                  # Basic star and number patterns
-│   └── Patterns_2/                # Advanced character and shape patterns
+│   ├── fundamentals_of_java/
+│   ├── operators_in_java/
+│   ├── Control_flow/
+│   ├── Loops/
+│   ├── methods/
+│   ├── Arrays_1/
+│   ├── Arrays_2/
+│   ├── 2D_Array/
+│   ├── strings/
+│   ├── Patterns/
+│   └── Patterns_2/
 ├── java_basics/
-│   ├── OOP_1/                     # Classes, objects, and custom data structures
-│   ├── OOP_2/                     # Inheritance, polymorphism, and exceptions
-│   ├── OOP_3/                     # Abstraction, interfaces, and generics
-│   ├── OOP_4/Projects/            # Calculator and tic-tac-toe projects
-│   ├── Linked-list-1/             # Introductory collection exercise
-│   ├── recursion/                 # Recursive algorithms and exercises
-│   ├── searching_algorithm/       # Linear and binary search
-│   ├── sorting_algorithm/         # Bubble, insertion, selection, and merge operations
-│   └── Time_and_Space_Complexity/ # Array-based complexity exercises
+│   ├── OOP_1/
+│   ├── OOP_2/
+│   ├── OOP_3/
+│   ├── OOP_4/
+│   ├── Linked-list-1/
+│   ├── Linked-list-2/
+│   ├── recursion/
+│   ├── searching_algorithm/
+│   ├── sorting_algorithm/
+│   ├── Stacks/
+│   └── Time_and_Space_Complexity/
+├── java_advanced/
+│   └── Queue/
 ├── Notes/
-│   ├── 2D_array/                  # Spiral traversal explanation and dry run
-│   └── Patterns_1/                # Pattern-solving strategy notes
-└── README.md
+│   ├── 2D_array/
+│   └── Patterns_1/
+├── README.md
+└── .gitignore
 ```
 
-## Running a program
+## Topics covered in detail
 
-These are individual practice files rather than a shared application or build system. Install a Java Development Kit (JDK), then open a terminal in the folder containing the file you want to run.
+### Introduction to Java
+- Program structure and execution
+- Variables, literals, and primitive data types
+- Operators, precedence, and type casting
+- Conditional logic and `switch`
+- Loops, nested loops, Fibonacci, and prime checks
+- Methods, arguments, return values, and method overloading
+- Arrays, array traversal, searching, and rotations
+- 2D arrays, jagged arrays, and spiral traversal
+- Strings, character arrays, and basic string manipulation
+- Pattern programs using stars, numbers, and characters
+
+### OOP and Java basics
+- Classes and objects
+- Object behavior and state
+- Encapsulation and reusability
+- Inheritance and polymorphism
+- Abstraction and interfaces
+- Generics
+- Exception handling
+- Practice with classes such as `Student`, `Employee`, `Fraction`, `Complex`, and `Polynomial`
+
+### Data structures and algorithms
+- Linked list basics and operations
+- Stack implementation and stack problems
+- Queue fundamentals
+- Recursion concepts and recursive problem-solving
+- Searching algorithms
+- Sorting algorithms
+- Time and space complexity analysis
+
+## How to run programs
+
+These are individual Java practice files. Each file is generally compiled and executed separately.
 
 ```bash
-javac Hello.java
-java Hello
+javac FileName.java
+java FileName
 ```
 
-Programs that use companion classes must be compiled together. For example:
+If a program depends on another class, compile both together:
 
 ```bash
-javac Student.java Student_use.java
-java Student_use
+javac Main.java Helper.java
+java Main
 ```
 
-Most examples are console programs, and some prompt for input. Compiled `.class` files are generated beside the source files and can be removed after use.
+Most files are console-based and may ask for user input.
 
 ## Notes
 
-- File and class names retain the names used during practice.
-- Most programs are independent examples; compile and run them from their own directories.
-- The `Notes` directory contains learning notes for pattern problems and spiral traversal.
+- This repository is built for learning and practice, not for a single app or project.
+- Files and class names reflect the original practice exercises.
+- The `Notes` folder contains explanations for key topics like spiral traversal and pattern-solving strategies.
+- The repo is still growing as Java and DSA concepts continue to improve.
