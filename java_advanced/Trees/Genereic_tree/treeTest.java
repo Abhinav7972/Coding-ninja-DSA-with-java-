@@ -1,7 +1,28 @@
-package java_advanced.Trees.Genereic_tree;
+//package java_advanced.Trees.Genereic_tree;
 
 
 public class treeTest {
+
+    public  static  void printTree(TreeNode<Integer> root)
+    {  
+        //special case not a base case 
+       if (root == null) {
+         return ;
+       }
+
+       System.out.print(root.data + " ");
+
+       for(int i = 0; i<root.Childern.size();i++)
+       {
+          TreeNode<Integer> child = root.Childern.get(i);
+          printTree(child);
+       }
+
+    }
+
+
+
+
     public static void main(String[] args) {
         TreeNode<Integer> root = new TreeNode<Integer>(4);
         TreeNode<Integer> node1 = new TreeNode<Integer>(2);
@@ -17,5 +38,8 @@ public class treeTest {
 
        node2.Childern.add(node4);
        node2.Childern.add(node5);
+
+
+       printTree(root);
     }
 }
