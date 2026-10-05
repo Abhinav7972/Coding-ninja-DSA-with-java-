@@ -10,8 +10,14 @@ public class treeTest {
          return ;
        }
 
-       System.out.print(root.data + " ");
+       System.out.print(root.data + "  :");
 
+       
+       for(int i = 0; i<root.Childern.size();i++)
+       {
+         System.out.print(root.Childern.get(i).data);
+       }
+       System.out.println();
        for(int i = 0; i<root.Childern.size();i++)
        {
           TreeNode<Integer> child = root.Childern.get(i);
