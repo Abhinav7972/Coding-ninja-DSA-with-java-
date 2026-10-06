@@ -26,7 +26,19 @@ public class treeTest {
 
     }
 
+   
+    public static int numberOfNodes(TreeNode<Integer> root)
+    {
+     int count = 1;
 
+     for(int i = 0;i<root.Childern.size();i++)
+     {
+       int childCount = numberOfNodes(root.Childern.get(i));
+       count+=childCount;
+     }
+
+    return  count;
+    }
 
 
     public static void main(String[] args) {
@@ -47,5 +59,7 @@ public class treeTest {
 
 
        printTree(root);
+       System.out.println();
+       System.out.println(numberOfNodes(root));
     }
 }
