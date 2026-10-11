@@ -1,5 +1,10 @@
 //package java_advanced.Trees.Genereic_tree;
 
+import  java.util.Queue;
+import  java.util.LinkedList; 
+import  java.util.Scanner;
+
+
 
 public class treeTest {
 
@@ -41,6 +46,46 @@ public class treeTest {
     }
 
 
+
+    public static  TreeNode<Integer> TakeInput()
+    {
+      Scanner sc = new Scanner(System.in); 
+      Queue<TreeNode<Integer>>pendingNode = new LinkedList();
+      System.out.println("Enter root data : ");
+
+
+      int rootData = sc.nextInt();
+
+      if (rootData == -1) {
+         return null;
+      } 
+
+      TreeNode<Integer> root  = new TreeNode(rootData);
+      pendingNode.add(root);
+
+      while (!pendingNode.isEmpty()) {
+        TreeNode<Integer> Front = pendingNode.poll();
+        System.out.println("Enter the no of Childern for : " + root.data);
+
+        int numChild = sc.nextInt();
+
+        for(int i =0;i<numChild;i++)
+        {
+           System.out.println("Enter  the " + i + " th  child for : " + Front.data);
+           int childData = sc.nextInt();
+           TreeNode<Integer> childNode = new TreeNode<Integer>(childData);
+           
+           Front.Childern.add(childNode);
+           pendingNode.add(childNode);
+        } 
+
+    
+      }
+    
+      return  root;
+      
+    }
+
     public static void main(String[] args) {
         TreeNode<Integer> root = new TreeNode<Integer>(4);
         TreeNode<Integer> node1 = new TreeNode<Integer>(2);
@@ -57,9 +102,9 @@ public class treeTest {
        node2.Childern.add(node4);
        node2.Childern.add(node5);
 
-
-       printTree(root);
+       TreeNode<Integer> inRoot = TakeInput();
+       printTree(inRoot);
        System.out.println();
-       System.out.println(numberOfNodes(root));
+       System.out.println(numberOfNodes(inRoot));
     }
 }
